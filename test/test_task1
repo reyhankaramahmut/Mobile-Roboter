@@ -1,52 +1,118 @@
-from .. import *
+import numpy as np
+from task1.task1 import *
+
+# Tests may be extended to cover more test cases.
 
 
 def test_exercise_21_a_t_ab():
+    """
+    Tests the result of exercise_21_a_t_ab() against the correct solution for T^A_B from the lecture.
+    """
     result = exercise_21_a_t_ab().round(3)
-    expected = None  # None needs to be replaced with the correct solution for T^A_B
-    assert result == expected
+    expected = np.array([
+        [-1,0,0,-2],
+        [0,-1,0,0],
+        [0,0,1,0],
+        [0,0,0,1]
+    ])
+    assert np.array_equal(result, expected)
 
 
 def test_exercise_21_a_t_bc():
-    assert False
+    result = exercise_21_a_t_bc().round(3)
+    expected = np.array([
+        [0,1,0,-4],
+        [-1,0,0,-1],
+        [0,0,1,0],
+        [0,0,0,1]
+    ])
+    assert np.array_equal(result,expected)
 
 
 def test_exercise_21_a_t_ac():
-    assert False
+    result = exercise_21_a_t_ac().round(3)
+    expected = np.array([
+        [0,-1,0,2],
+        [1,0,0,1],
+        [0,0,1,0],
+        [0,0,0,1]
+    ])
+    assert np.array_equal(result,expected)
 
 
 def test_exercise_21_b_t_ac():
-    assert False
+    result = exercise_21_b_t_ac().round(3)
+    expected = np.array([
+        [0,-1,0,2],
+        [1,0,0,1],
+        [0,0,1,0],
+        [0,0,0,1]
+    ])
+    assert np.array_equal(result,expected)
 
 
 def test_exercise_21_c_t_ca():
-    assert False
+    result = exercise_21_b_t_ac().round(3)
+    print(result)
+    expected = np.array([
+        [0,-1,0,2],
+        [1,0,0,1],
+        [0,0,1,0],
+        [0,0,0,1]
+    ])
+    assert np.array_equal(result,expected)
 
 
 def test_exercise_21_d():
-    assert False
+    result = exercise_21_d(np.array([-3,1,0,1])).round(3)
+
+    expected = np.array([1,-1,0])
+    assert np.array_equal(result,expected)
 
 
 # Task 2.2 from lecture
 def test_exercise_22_a_t_oa():
-    assert False
+    result = exercise_22_a_t_oa().round(3)
+    expected = np.array([
+        [1,0,1],
+        [0,1,1],
+        [0,0,1]
+    ])
+    assert np.array_equal(result, expected)
 
 
 def test_exercise_22_a_t_ob():
-    assert False
-
+    result = exercise_22_a_t_ob().round(3)
+    expected = np.array([
+        [0.866,-0.5,3],
+        [0.5,0.866,2],
+        [0,0,1]
+    ])
+    assert np.array_equal(result, expected)
 
 def test_exercise_22_b():
-    assert False
+    result = exercise_22_b(np.array([1,1,1])).round(3)
+    expected = np.array([3.366,3.366])
+    assert np.array_equal(result, expected)
 
 
 def test_exercise_22_c_t_ab():
-    assert False
+    result = exercise_22_c_t_ab().round(3)
+    expected = np.array([
+        [0.866,-0.5,2],
+        [0.5,0.866,1],
+        [0,0,1]
+    ])
+    assert np.array_equal(result, expected)
 
 
 def test_exercise_22_d():
-    assert False
+    result = exercise_22_d(np.array([1,1,1])).round(3)
+    expected = np.array([2.366,2.366])
+    assert np.array_equal(result, expected)
 
 
 def test_exercise_22_e():
-    assert False
+    result = exercise_22_d(np.array([2.366,2.366,1])).round(3)
+    expected = np.array([2.866,4.232])
+    assert np.array_equal(result, expected)
