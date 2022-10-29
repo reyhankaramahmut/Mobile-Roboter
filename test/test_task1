@@ -1,0 +1,52 @@
+from .. import *
+
+
+def test_exercise_21_a_t_ab():
+    result = exercise_21_a_t_ab().round(3)
+    expected = None  # None needs to be replaced with the correct solution for T^A_B
+    assert result == expected
+
+
+def test_exercise_21_a_t_bc():
+    assert False
+
+
+def test_exercise_21_a_t_ac():
+    assert False
+
+
+def test_exercise_21_b_t_ac():
+    assert False
+
+
+def test_exercise_21_c_t_ca():
+    assert False
+
+
+def test_exercise_21_d():
+    assert False
+
+
+# Task 2.2 from lecture
+def test_exercise_22_a_t_oa():
+    assert False
+
+
+def test_exercise_22_a_t_ob():
+    assert False
+
+
+def test_exercise_22_b():
+    assert False
+
+
+def test_exercise_22_c_t_ab():
+    assert False
+
+
+def test_exercise_22_d():
+    assert False
+
+
+def test_exercise_22_e():
+    assert False
