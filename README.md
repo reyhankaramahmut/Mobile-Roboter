@@ -46,10 +46,3 @@ Plotten Sie außerdem den gezeichneten Kreis in der Draufsicht und speichern Sie
 
 Verwenden Sie zum Generieren der Winkel für die Kreisbewegung ``np.linspace`` im Bereich von $`0`$ bis $`2 \pi`$.
 
-## Abgabe
-Bearbeiten Sie die Aufgabe mit ihrem Team auf Ihrem Fork in Branch `task2`. 
-Sobald Sie fertig sind, stellen Sie einen Merge Request gegen den Branch `master` im Abgabe-Repository.
-Die Abgabe gilt als bestanden, wenn die CI-Tests ohne Fehler durchlaufen und der Merge-Request akzeptiert wurde. 
-
-## Deadline
-Der Merge-Request muss bis zum 15. November 2022 um 23:59 erstellt worden sein.
